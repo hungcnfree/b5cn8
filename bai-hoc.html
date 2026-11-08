@@ -1,0 +1,595 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Bài 5 · Bản vẽ nhà – Bài giảng slide | Công nghệ 8</title>
+<meta name="description" content="Bài giảng dạng slide: Công nghệ 8 – Bài 5 Bản vẽ nhà (Kết nối tri thức), 15 slide, tương tác trực quan.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%2312263f' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M3 10a2 2 0 0 1 .709-1.528l7-5.999a2 2 0 0 1 2.582 0l7 5.999A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z'/%3E%3Cpath d='M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="assets/css/slides.css">
+<link rel="stylesheet" href="assets/css/extra.css">
+</head>
+<body>
+<div class="deck">
+
+  <div class="pbar" style="position:fixed;top:0;left:0;right:0;z-index:70"><i id="pbar"></i></div>
+
+  <!-- 1 -->
+  <section class="slide" data-menu="Bìa · Bản vẽ nhà">
+    <div class="top"><span class="crumb"><b>CÔNG NGHỆ 8 · BÀI 5</b><span>·</span><span>Kết nối tri thức</span></span></div>
+    <div class="body">
+      <div class="left cover">
+        <div class="label">Chương I · Vẽ kĩ thuật</div>
+        <h1 class="title">Bản vẽ <em>nhà</em></h1>
+        <p class="lead">Một tờ giấy vẽ đủ để xây cả ngôi nhà. Cùng Thợ nhện đọc bản vẽ theo đúng cách người thợ vẫn làm.</p>
+        <div class="meta"><span><b>2 tiết</b> · 90 phút</span><span><b>15 slide</b></span><span><b>3 hoạt động</b> Thợ nhện</span></div>
+        <div class="row">
+          <button class="btn primary" data-go="2">Bắt đầu →</button>
+          <button class="btn" data-say="s1">🔊 Nghe dẫn dắt</button>
+        </div>
+        <p class="cap" style="margin-top:12px">Dùng <b>← Lùi</b> / <b>Tiến →</b>, phím mũi tên hoặc vuốt ngang. Nút nhà giữa mở mục lục.</p>
+      </div>
+      <div class="right"><div class="cover-fig"><img src="assets/img/h51.jpg" alt="Hình 5.1 – bốn kí hiệu bộ phận ngôi nhà" data-zoom="assets/img/h51.jpg"></div><p class="lead" style="margin:12px 0 0;font-size:15px">Bốn kí hiệu a, b, c, d này là gì? Bấm vào ảnh để phóng to, rồi cùng đoán nhé!</p></div>
+    </div>
+  </section>
+
+  <!-- 2 -->
+  <section class="slide stack" data-menu="Mục tiêu bài học">
+    <div class="top"><span class="crumb"><b>MỤC TIÊU</b><span>·</span><span>Sau bài học</span></span></div>
+    <div class="body">
+      <div class="left">
+        <div class="label">Em sẽ làm được</div>
+        <h2 class="title">Bốn điều<br>cần <em>nắm</em></h2>
+        <p class="lead">Không học thuộc định nghĩa – học để đọc được một bản vẽ thật.</p>
+      </div>
+      <div class="right panel cream">
+        <ul class="points">
+          <li><span class="dot">1</span><span>Nói được <b>bản vẽ nhà</b> là gì và gồm những nội dung nào.</span></li>
+          <li><span class="dot">2</span><span>Phân biệt <b>mặt đứng – mặt bằng – mặt cắt</b> và việc dùng mỗi hình.</span></li>
+          <li><span class="dot">3</span><span>Gọi đúng tên <b>6 kí hiệu quy ước</b> theo TCVN 4609:1998.</span></li>
+          <li><span class="dot">4</span><span>Tự đọc một bản vẽ nhà đơn giản theo <b>trình tự 4 bước</b>.</span></li>
+        </ul>
+        <p class="cap">Tiêu chí đạt: đúng ≥ 70% bài thực hành và luyện tập.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 3 -->
+  <section class="slide flip" data-menu="Khởi động · Hình 5.1">
+    <div class="top"><span class="crumb"><b>KHỞI ĐỘNG</b><span>·</span><span>Hình 5.1</span></span></div>
+    <div class="body">
+      <div class="left">
+        <div class="label">Trước khi vào bài</div>
+        <h2 class="title">Bốn kí hiệu<br>này là <em>gì?</em></h2>
+        <p class="lead">Trên bản vẽ nhà, người ta không vẽ chi tiết từng viên gạch – mà vẽ bằng kí hiệu. Em thử đoán xem a, b, c, d là bộ phận nào.</p>
+        <div class="row"><a class="btn primary pulse" id="btn-game1" href="chang-1.html">▶ Mở hoạt động: Thợ nhện công trường</a></div><button class="btn sm" data-say="s3">🔊 Nghe hướng dẫn</button>
+        <p class="cap">Hai kí hiệu “na ná nhau” là cầu thang – nhưng dùng ở hai hình khác nhau.</p>
+      </div>
+      <div class="right panel">
+        <h3>Hình 5.1 – Bốn kí hiệu trên công trường</h3>
+        <div class="syms"><div class="sym"><i>a</i>Hai nét song song, có ô vuông</div><div class="sym"><i>b</i>Đường cắt + bậc thang</div><div class="sym"><i>c</i>Hai cánh mở đối xứng</div><div class="sym"><i>d</i>Bậc thang + mũi tên</div></div>
+        <p class="cap">a · b · c · d — đáp án sẽ rõ ngay sau hoạt động.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4 -->
+  <section class="slide" data-menu="I. Nội dung bản vẽ nhà">
+    <div class="top"><span class="crumb"><b>I. NỘI DUNG BẢN VẼ NHÀ</b><span>·</span><span>Khái niệm</span></span></div>
+    <div class="body">
+      <div class="left">
+        <div class="label">Khái niệm</div>
+        <h2 class="title">Bản vẽ nhà<br>là <em>gì?</em></h2>
+        <p class="lead">Là bản vẽ kĩ thuật, dùng trong <b>thiết kế</b> và <b>thi công</b> xây dựng ngôi nhà. Nó gồm các hình biểu diễn và các số liệu xác định hình dạng, kích thước, bố cục của ngôi nhà.</p>
+      </div>
+      <div class="right panel">
+        <h3>Ba thành phần – bấm thả tim mỗi thẻ</h3>
+<div class="hcards"><button class="hcard" type="button"><b>Khung tên</b><span>Tên ngôi nhà, tỉ lệ bản vẽ, người vẽ – người kiểm tra.</span><span class="heart">❤</span></button><button class="hcard" type="button"><b>Hình biểu diễn</b><span>Mặt đứng, mặt bằng, mặt cắt.</span><span class="heart">❤</span></button><button class="hcard" type="button"><b>Kích thước</b><span>Kích thước chung và từng bộ phận (mm).</span><span class="heart">❤</span></button></div>
+<p class="cap saydone" hidden>Đã thả tim đủ 3 thẻ – bấm nút Tiến để sang phần tiếp theo.</p>
+<p class="cap">Thiếu khung tên → không biết tỉ lệ; thiếu kích thước → không xây được.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 5 -->
+  <section class="slide flip" data-menu="I. Ba hình biểu diễn">
+    <div class="top"><span class="crumb"><b>I. NỘI DUNG BẢN VẼ NHÀ</b><span>·</span><span>Hình 5.2</span></span></div>
+    <div class="body">
+      <div class="left">
+        <div class="label">Ba hình biểu diễn</div>
+        <h2 class="title">Nhìn ngôi nhà<br>theo <em>ba cách</em></h2>
+        <p class="lead" style="margin-bottom:6px">Mỗi hình trả lời một câu hỏi khác nhau. Cả ba cùng nhau mới đủ để xây nhà.</p><ul class="legend"><li><span class="k">a</span><span><b>Mặt đứng</b> – hình chiếu mặt ngoài, biểu diễn hình dạng bên ngoài.</span></li><li><span class="k">b</span><span><b>Mặt cắt</b> – hình cắt song song mặt phẳng chiếu đứng/cạnh, biểu diễn bộ phận và chiều cao.</span></li><li><span class="k">c</span><span><b>Mặt bằng</b> – cắt bỏ phần trên bằng mặt phẳng nằm ngang, diễn tả vị trí tường–cửa–đồ đạc.</span></li></ul>
+        <div class="row"><a class="btn primary" id="btn-game2" href="chang-2.html">🧭 Mở hoạt động: Khám phá 3D</a></div><button class="btn sm" data-say="s5">🔊 Nghe dẫn dắt</button>
+      </div>
+      <div class="right panel">
+        <div class="figbox hot"><img src="assets/img/h52.jpg" alt="Hình 5.2 – ba hình biểu diễn" data-zoom="assets/img/h52.jpg"><button class="region" style="left:3%;top:5%;width:44%;height:42%" data-q="MẶT ĐỨNG – là hình chiếu vuông góc của mặt ngoài ngôi nhà lên mặt phẳng hình chiếu đứng (hoặc cạnh), dùng để biểu diễn hình dạng bên ngoài của ngôi nhà."><span class="tag">a</span></button><button class="region blue" style="left:52%;top:4%;width:44%;height:44%" data-q="MẶT CẮT – là hình cắt có mặt phẳng cắt song song với mặt phẳng hình chiếu đứng (hoặc cạnh), nhằm biểu diễn các bộ phận và kích thước của ngôi nhà theo chiều cao."><span class="tag">b</span></button><button class="region" style="left:3%;top:48%;width:44%;height:48%" data-q="MẶT BẰNG – là hình chiếu vuông góc phần còn lại của ngôi nhà sau khi tưởng tượng cắt bỏ phần trên bằng mặt phẳng nằm ngang, dùng diễn tả vị trí, kích thước tường, vách, cửa đi, cửa sổ, thiết bị và đồ đạc."><span class="tag">c</span></button></div>
+        <div class="steps compact" style="margin-top:10px" data-seq=".step">
+          
+          
+          
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 6 -->
+  <section class="slide center" data-menu="II. Kí hiệu quy ước">
+    <div class="top"><span class="crumb"><b>II. KÍ HIỆU QUY ƯỚC</b><span>·</span><span>Bảng 5.1</span></span></div>
+    <div class="body">
+      <div class="left">
+        <div class="label">Bảng 5.1 · TCVN 4609:1998</div>
+        <h2 class="title">Sáu kí hiệu<br>phải <em>nhớ</em></h2>
+        <p class="lead">Trên bản vẽ nhà, người ta dùng kí hiệu quy ước để vẽ các bộ phận.</p>
+        <p class="cap" style="font-size:13px;color:#5b7590">Mẹo: cầu thang có hai kí hiệu – một cho mặt cắt, một cho mặt bằng.</p>
+      </div>
+      <div class="right panel">
+        <h3>Bảng 5.1 – Kí hiệu quy ước</h3>
+        <div class="figbox"><img src="assets/img/bang51.jpg" alt="Bảng 5.1 SGK"></div>
+        <div class="syms" style="margin-top:10px" data-seq=".sym">
+          <div class="sym"><i>1</i>Cửa đi đơn một cánh</div>
+          <div class="sym"><i>2</i>Cửa đi đơn hai cánh</div>
+          <div class="sym"><i>3</i>Cửa sổ đơn</div>
+          <div class="sym"><i>4</i>Cửa sổ kép</div>
+          <div class="sym"><i>5</i>Cầu thang trên mặt cắt</div>
+          <div class="sym"><i>6</i>Cầu thang trên mặt bằng</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 7 -->
+  <section class="slide full" data-menu="II. Nhận diện nhanh">
+    <div class="top"><span class="crumb"><b>II. KÍ HIỆU QUY ƯỚC</b><span>·</span><span>Đại chiến Tơ Nhện</span></span></div>
+    <div class="body">
+      <div class="qwrap">
+        <div class="qhead"><span>Đại chiến Tơ Nhện</span><span id="qnum7">3 câu hỏi</span></div>
+        <div class="qstage" id="qstage7">
+          <div class="qgate" id="gate7">
+            <p class="qtxt" style="font-size:clamp(18px,2vw,24px)">Trước tiên, hãy chơi trò chơi “Đại chiến Tơ Nhện” để ôn lại các kí hiệu.</p>
+            <div class="row">
+              <a class="btn primary" href="chang-3.html">⚔ Mở: Đại chiến Tơ Nhện</a>
+              <button class="btn" id="done7" type="button">✔ Đã chơi xong</button>
+            </div>
+          </div>
+          <div id="quiz7" hidden>
+            <div class="qtxt" id="qtxt7"></div>
+            <div class="qopts" id="qopts7"></div>
+            <div class="qexp" id="qexp7"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 8 -->
+  <section class="slide timeline" data-menu="III. Trình tự đọc bản vẽ">
+    <div class="top"><span class="crumb"><b>III. ĐỌC BẢN VẼ NHÀ</b><span>·</span><span>Bảng 5.2</span></span></div>
+    <div class="body">
+      <div class="left">
+        <div class="label">Quy trình</div>
+        <h2 class="title">Bốn bước,<br>không <em>bỏ bước</em></h2>
+        <p class="lead">Đọc sai thứ tự là dễ hiểu sai nhất – nhất là khi chưa biết tỉ lệ.</p>
+        <button class="btn" data-say="s8">🔊 Nghe 4 bước</button>
+        <button class="btn primary" id="gopen" type="button">▶ Trò chơi: Xếp đúng 4 bước</button>
+      </div>
+      <div class="right panel">
+        <h3>Bảng 5.2 – Trình tự đọc bản vẽ nhà</h3>
+        <div class="figbox tight"><img src="assets/img/b52.jpg" alt="Bảng 5.2 – trình tự đọc bản vẽ nhà" data-zoom="assets/img/b52.jpg"></div>
+        <div class="steps" style="margin-top:10px">
+          <div class="step"><span class="n">1</span><span><b>Khung tên</b>Tên gọi ngôi nhà · tỉ lệ bản vẽ.</span></div>
+          <div class="step"><span class="n">2</span><span><b>Hình biểu diễn</b>Tên gọi các hình.</span></div>
+          <div class="step"><span class="n">3</span><span><b>Kích thước</b>Chung trước, rồi từng bộ phận.</span></div>
+          <div class="step"><span class="n">4</span><span><b>Các bộ phận</b>Số phòng · cửa · bộ phận khác.</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 9 -->
+  <section class="slide full" data-menu="III. Ví dụ · Hình 5.3">
+    <div class="top"><span class="crumb"><b>III. ĐỌC BẢN VẼ NHÀ</b><span>·</span><span>Hình 5.3</span></span></div>
+    <div class="body">
+      <div class="head">
+        <div class="label">Bấm vào từng vùng để nghe chú thích</div>
+        <h2 class="title">Bản vẽ nhà <em>một tầng</em></h2>
+      </div>
+      <div class="figbox">
+        <img src="assets/img/h53.jpg" alt="Hình 5.3 – bản vẽ nhà một tầng" data-zoom="assets/img/h53.jpg">
+        <button class="region" style="left:4%;top:2%;width:42%;height:30%" data-q="MẶT ĐỨNG – nhìn từ ngoài: mái cao 2 200, tường cao 3 700, nền cao 450 (mm)."><span class="tag">Mặt đứng</span></button>
+        <button class="region blue" style="left:52%;top:2%;width:45%;height:30%" data-q="MẶT CẮT 1-1 – chiều cao: cửa sổ 1 000 × 1 500, cửa đi cao 2 600 (mm)."><span class="tag">Mặt cắt 1-1</span></button>
+        <button class="region" style="left:2%;top:33%;width:50%;height:62%" data-q="MẶT BẰNG – dài 15 660; vệ sinh 3 000, hai phòng ngủ 3 400, khách + bếp + ăn 5 000; ngang 4 500 (mm)."><span class="tag">Mặt bằng</span></button>
+        <button class="region blue" style="left:50%;top:84%;width:48%;height:14%" data-q="KHUNG TÊN – Nhà một tầng, tỉ lệ 1:100."><span class="tag">Khung tên</span></button>
+      </div>
+      <div class="qask"><b class="qt">Bấm một vùng kẻ viền để nghe chú thích.</b><div class="opts"></div></div>
+    </div>
+  </section>
+
+  <!-- 10 -->
+  <section class="slide full" data-menu="Thực hành · Hình 5.4">
+    <div class="top"><span class="crumb"><b>THỰC HÀNH</b><span>·</span><span>Hình 5.4</span></span></div>
+    <div class="body">
+      <div class="split">
+        <div class="fig65">
+          <div class="figbox"><img src="assets/img/fig10.jpg" alt="Hình 5.4 – bản vẽ nhà" data-zoom="assets/img/fig10.jpg"></div>
+          <div class="qask"><b class="qt">Quan sát bản vẽ rồi điền 8 ô bên phải theo trình tự Bảng 5.2.</b><div class="opts"></div></div>
+        </div>
+        <div class="panel form35">
+          <h3>Phiếu đọc bản vẽ</h3>
+          <div class="fill" id="fill">
+            <label>Tỉ lệ <input data-a="1:120" placeholder="1:…"></label>
+            <label>Chiều dài (mm) <input data-a="14400" inputmode="numeric" placeholder="mm"></label>
+            <label>Chiều rộng (mm) <input data-a="7000" inputmode="numeric" placeholder="mm"></label>
+            <label>Chiều cao (mm) <input data-a="4200" inputmode="numeric" placeholder="mm"></label>
+            <label>Phòng ngủ 1 – dài <input data-a="4800" inputmode="numeric" placeholder="mm"></label>
+            <label>Phòng ngủ 2 – dài <input data-a="7000" inputmode="numeric" placeholder="mm"></label>
+            <label>Nhà vệ sinh – rộng <input data-a="2200" inputmode="numeric" placeholder="mm"></label>
+            <label>Số phòng ngủ <input data-a="2" inputmode="numeric" placeholder="phòng"></label>
+          </div>
+          <div class="row" style="margin-top:10px">
+            <button class="btn primary" id="check" type="button">✅ Chấm bài</button>
+            <a class="btn sm" href="assets/img/fig10.jpg" target="_blank" rel="noopener">🔎 Xem lớn</a>
+          </div>
+          <p class="cap" id="score" style="font-weight:800;color:#1c3a5e">0/8 ô đúng</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 11 -->
+  <section class="slide full" data-menu="Thực hành · Kéo thả phân loại">
+    <div class="top"><span class="crumb"><b>THỰC HÀNH</b><span>·</span><span>KÉO THẢ</span></span></div>
+    <div class="body">
+      <div class="labhead">
+        <b>Phân loại thông tin bản vẽ</b>
+        <span class="hint">Quan sát Hình 5.4 rồi kéo thẻ vào đúng cột. Bấm vào thẻ đã đặt để lấy lại.</span>
+      </div>
+      <div class="lab">
+        <div class="lab-left">
+          <div class="figbox"><img src="assets/img/fig10.jpg" alt="Hình 5.4" data-zoom="assets/img/fig10.jpg"></div>
+          <div class="chips" id="chips"></div>
+        </div>
+        <div class="lab-right">
+          <div class="cols" id="cols">
+            <div class="col" data-cat="1"><h4>Khung tên</h4></div>
+            <div class="col" data-cat="2"><h4>Kích thước</h4></div>
+            <div class="col" data-cat="3"><h4>Các bộ phận</h4></div>
+          </div>
+        </div>
+      </div>
+      <div class="labctrl">
+        <button class="btn primary" id="dndcheck" type="button">✅ Chấm bài</button>
+        <button class="btn" id="dndreset" type="button">↺ Làm lại</button>
+        <span class="ln-score" id="dndscore" style="font-weight:800;color:#1c3a5e">0/6 đúng</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- 12 -->
+  <section class="slide full" data-menu="Luyện tập cuối bài">
+    <div class="top"><span class="crumb"><b>LUYỆN TẬP</b><span>·</span><span>7 câu</span></span></div>
+    <div class="body">
+      <div class="qwrap">
+        <div class="qhead"><span>Luyện tập cuối bài</span><span id="qnum">Câu 1/7</span></div>
+        <div class="qstage" id="qstage">
+          <div class="qtxt" id="qtxt"></div>
+          <div class="qopts" id="qopts"></div>
+          <div class="qexp" id="qexp"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 13 -->
+  <section class="slide flip" data-menu="Vận dụng">
+    <div class="top"><span class="crumb"><b>VẬN DỤNG</b><span>·</span><span>Về nhà</span></span></div>
+    <div class="body">
+      <div class="left">
+        <div class="label">Bài tập về nhà</div>
+        <h2 class="title">Bản vẽ<br>trong <em>đời sống</em></h2>
+        <p class="lead">Chọn một việc – làm xong chụp ảnh nộp cho thầy/cô.</p>
+      </div>
+      <div class="right panel cream">
+        <div class="steps">
+          <div class="step"><span class="n">A</span><span><b>Sưu tầm</b>Một bản vẽ mặt bằng ngôi nhà hoặc căn hộ, đọc theo 4 bước và nêu nhận xét.</span></div>
+          <div class="step"><span class="n">B</span><span><b>Tự vẽ</b>Mặt bằng phòng ngủ của em trên giấy kẻ ô, ghi kích thước thật, đánh dấu cửa đi – cửa sổ.</span></div>
+        </div>
+        <p class="cap">Tiêu chí: đủ 4 bước · kích thước có đơn vị · nêu được ít nhất 2 nhận xét.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 14 -->
+  <section class="slide" data-menu="Mở rộng · Video">
+    <div class="top"><span class="crumb"><b>MỞ RỘNG</b><span>·</span><span>Video ngắn</span></span></div>
+    <div class="body">
+      <div class="left">
+        <div class="label">Tổng 6 phút</div>
+        <h2 class="title">Xem thêm<br><em>2 video ngắn</em></h2>
+        <p class="lead">Video 1 ôn lại nội dung bài; video 2 mở rộng sang ngôi nhà sàn cổ của người Tày.</p>
+        <p class="cap">Video nhúng từ YouTube – cần Internet.</p>
+      </div>
+      <div class="right">
+        <div class="vids">
+          <div class="vid">
+            <div class="frame"><iframe src="https://www.youtube-nocookie.com/embed/x6AjG3qf7is?rel=0" title="Công nghệ 8 Bài 5: Nội dung của bản vẽ nhà" loading="lazy" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen referrerpolicy="strict-origin-when-cross-origin"></iframe></div>
+            <div class="cap"><b>Nội dung của bản vẽ nhà</b><span>2:50</span></div>
+          </div>
+          <div class="vid">
+            <div class="frame"><iframe src="https://www.youtube-nocookie.com/embed/DdU0ja5OD08?rel=0" title="Ngôi nhà sàn cổ của người Tày – VTV4" loading="lazy" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen referrerpolicy="strict-origin-when-cross-origin"></iframe></div>
+            <div class="cap"><b>Ngôi nhà sàn cổ – VTV4</b><span>3:22</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 15 -->
+  <section class="slide full" data-menu="Tổng kết · Tự đánh giá">
+    <div class="top"><span class="crumb"><b>TỔNG KẾT</b><span>·</span><span>Tự đánh giá</span></span></div>
+    <div class="body">
+      <div class="head">
+        <div class="label">Năm điều cần nhớ</div>
+        <h2 class="title" style="margin-bottom:4px">Tổng kết <em>và tự đánh giá</em></h2>
+      </div>
+      <ul class="points five">
+        <li><span class="dot">1</span><b>Bản vẽ nhà</b> dùng trong thiết kế và thi công.</li>
+        <li><span class="dot">2</span>Ba hình: <b>mặt đứng – mặt bằng – mặt cắt</b>.</li>
+        <li><span class="dot">3</span><b>Sáu kí hiệu</b> theo TCVN 4609:1998.</li>
+        <li><span class="dot">4</span>Bốn bước: khung tên → hình biểu diễn → kích thước → bộ phận.</li>
+        <li><span class="dot">5</span>Đọc đúng thứ tự, đúng <b>đơn vị mm</b>.</li>
+      </ul>
+      <div class="rubric">
+        <div class="rb" data-c="1"><span>1. Em nêu được bản vẽ nhà gồm những gì.</span>
+          <div class="lvs"><button class="lv" data-v="1">Chưa chắc</button><button class="lv" data-v="2">Cần xem lại</button><button class="lv" data-v="3">Tự tin</button></div></div>
+        <div class="rb" data-c="2"><span>2. Em phân biệt mặt đứng – mặt bằng – mặt cắt.</span>
+          <div class="lvs"><button class="lv" data-v="1">Chưa chắc</button><button class="lv" data-v="2">Cần xem lại</button><button class="lv" data-v="3">Tự tin</button></div></div>
+        <div class="rb" data-c="3"><span>3. Em gọi đúng tên 6 kí hiệu quy ước.</span>
+          <div class="lvs"><button class="lv" data-v="1">Chưa chắc</button><button class="lv" data-v="2">Cần xem lại</button><button class="lv" data-v="3">Tự tin</button></div></div>
+        <div class="rb" data-c="4"><span>4. Em nhớ trình tự 4 bước đọc bản vẽ.</span>
+          <div class="lvs"><button class="lv" data-v="1">Chưa chắc</button><button class="lv" data-v="2">Cần xem lại</button><button class="lv" data-v="3">Tự tin</button></div></div>
+        <div class="rb" data-c="5"><span>5. Em tự đọc được một bản vẽ nhà đơn giản.</span>
+          <div class="lvs"><button class="lv" data-v="1">Chưa chắc</button><button class="lv" data-v="2">Cần xem lại</button><button class="lv" data-v="3">Tự tin</button></div></div>
+        <div class="rbsum" id="rbsum">Chọn mức cho từng tiêu chí – hệ thống gợi ý bước tiếp theo.</div>
+      </div>
+      <div class="row" style="justify-content:center">
+        <a class="btn primary" href="index.html">🏠 Về trang nhiệm vụ</a>
+        <button class="btn" data-say="ket-bai">🔊 Nghe kết bài</button>
+      </div>
+    </div>
+  </section>
+
+</div>
+
+<button id="sound" aria-label="Tắt âm thanh"></button>
+
+<div class="nav" id="nav">
+  <div class="dots" id="dots"></div>
+  <div class="ctrl">
+    <button id="prev" aria-label="Lùi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m15 18-6-6 6-6"/></svg></button>
+    <button class="home" id="home" aria-label="Mục lục bài học"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M3 10a2 2 0 0 1 .709-1.528l7-5.999a2 2 0 0 1 2.582 0l7 5.999A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><path d="M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8"/></svg></button>
+    <button id="next" aria-label="Tiến"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg></button>
+    <span class="count" id="count">01 / 15</span>
+  </div>
+</div>
+
+<div class="menu" id="menu">
+  <div class="box">
+    <div class="mhead"><h3>Mục lục bài học</h3><button class="mclose" id="mclose" type="button" aria-label="Đóng">✕</button></div>
+    <ol id="mlist"></ol>
+  </div>
+</div>
+
+<script src="assets/js/slides.js"></script>
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+  function markDone(){ try { localStorage.setItem('cn8b5', JSON.stringify({visited:{4:1,5:1},done:{4:1,5:1}})); localStorage.setItem('cn8b5_slides', JSON.stringify({max:15,last:15})); } catch(e){} }
+  function norm(s) { return (s || '').toLowerCase().replace(/\s+/g, ' ').trim(); }
+
+  // hotspot: bấm chấm trên bản vẽ
+  document.querySelectorAll('.figbox').forEach(function (box) {
+    var qask = box.parentElement.querySelector('.qask');
+    box.querySelectorAll('.mark').forEach(function (mk) {
+      mk.addEventListener('click', function () {
+        box.querySelectorAll('.mark').forEach(function (x) { x.classList.remove('on'); });
+        mk.classList.add('on');
+        if (qask) {
+          qask.querySelector('.qt').textContent = mk.dataset.q;
+          var o = qask.querySelector('.opts'); o.innerHTML = '';
+          var ans = +mk.dataset.a;
+          mk.dataset.opts.split('|').forEach(function (t, idx) {
+            var b = document.createElement('button'); b.className = 'opt'; b.textContent = t;
+            b.addEventListener('click', function () {
+              o.querySelectorAll('.opt').forEach(function (x) { x.classList.remove('ok', 'bad'); });
+              b.classList.add(idx + 1 === ans ? 'ok' : 'bad');
+            });
+            o.appendChild(b);
+          });
+        }
+      });
+    });
+  });
+
+  // quiz nhanh (slide 7)
+  var Q7 = [
+    { q: '1. Mặt bằng là hình chiếu của phần còn lại sau khi…', a: 1, o: ['Cắt bỏ phần mái', 'Cắt đứng qua nhà', 'Nhìn từ mặt trước'], e: 'Cắt bỏ mái rồi nhìn từ trên xuống mới thấy bố cục các phòng.' },
+    { q: '2. Hình nào cho biết chiều cao tường, cửa, mái?', a: 2, o: ['Mặt đứng', 'Mặt cắt', 'Mặt bằng'], e: 'Mặt cắt là hình cắt theo chiều đứng, biểu diễn chiều cao.' },
+    { q: '3. Cầu thang trên mặt bằng khác mặt cắt ở chỗ…', a: 3, o: ['Có đường cắt', 'Giống hệt nhau', 'Có mũi tên chỉ chiều đi lên'], e: 'Trên mặt bằng, cầu thang có mũi tên chỉ chiều đi lên.' }
+  ];
+  var s7qnum = document.getElementById('qnum7'), s7qtxt = document.getElementById('qtxt7'),
+      s7opts = document.getElementById('qopts7'), s7exp = document.getElementById('qexp7'),
+      s7idx = 0, s7score = 0, s7lock = false;
+  function showQ7() {
+    var it = Q7[s7idx];
+    s7qnum.textContent = 'Câu ' + (s7idx + 1) + '/' + Q7.length;
+    s7qtxt.textContent = it.q;
+    s7exp.textContent = '';
+    s7opts.innerHTML = '';
+    it.o.forEach(function (t, i) {
+      var b = document.createElement('button'); b.type = 'button';
+      b.innerHTML = '<i>' + String.fromCharCode(65 + i) + '</i>' + t;
+      b.addEventListener('click', function () {
+        if (s7lock) return; s7lock = true;
+        var ok = i + 1 === it.a;
+        var all = s7opts.querySelectorAll('button');
+        all.forEach(function (x) { x.classList.remove('ok', 'bad'); });
+        b.classList.add(ok ? 'ok' : 'bad');
+        if (!ok) all[it.a - 1].classList.add('ok');
+        s7exp.textContent = it.e;
+        if (window.FX) { if (ok) FX.ok(); else FX.bad(); }
+        setTimeout(function () {
+          s7lock = false; s7idx++;
+          if (s7idx < Q7.length) showQ7(); else finish7();
+        }, 1500);
+      });
+      s7opts.appendChild(b);
+    });
+  }
+  function finish7() {
+    s7qnum.textContent = 'Hoàn thành';
+    s7qtxt.textContent = ''; s7opts.innerHTML = ''; s7exp.textContent = '';
+    var fin = document.createElement('div'); fin.className = 'qfin';
+    fin.innerHTML = 'Em trả lời đúng <b style="color:#1f9d55">' + s7score + '/' + Q7.length + '</b> câu' + (s7score === 3 ? ' — Xuất sắc!' : ' — Xem lại các câu chưa chắc nhé.');
+    document.getElementById('qstage7').appendChild(fin);
+    var nx = document.getElementById('next'); if (nx) nx.classList.add('blink');
+  }
+  document.getElementById('done7').addEventListener('click', function () {
+    document.getElementById('gate7').hidden = true;
+    document.getElementById('quiz7').hidden = false;
+    showQ7();
+  });
+
+  // chấm bài điền (slide 10)
+  var ins = [].slice.call(document.querySelectorAll('#fill input'));
+  document.getElementById('check').addEventListener('click', function () {
+    var ok = 0;
+    ins.forEach(function (i) {
+      var want = i.dataset.a, got = norm(i.value);
+      var right = /^\d+$/.test(want) ? (got.replace(/[^\d]/g, '') === want) : (got.indexOf(want) > -1);
+      i.classList.remove('ok', 'bad');
+      if (got) i.classList.add(right ? 'ok' : 'bad');
+      if (right) ok++;
+    });
+    var pct = Math.round(ok / ins.length * 100);
+    var sc = document.getElementById('score');
+    sc.textContent = ok + '/' + ins.length + ' ô đúng · ' + pct + '%' + (pct >= 70 ? '  ✓ Đạt' : '  – cần ≥70%');
+    sc.style.color = pct >= 70 ? '#1f9d55' : '#d64545';
+    if (pct >= 70) markDone();
+  });
+  ins.forEach(function (i) { i.addEventListener('keydown', function (e) { if (e.key === 'Enter') document.getElementById('check').click(); }); });
+
+  // kéo thả 3 cột (slide 11)
+  var CHIPS = [
+    { t: 'Nhà mái bằng', c: 1 }, { t: 'Tỉ lệ 1:120', c: 1 },
+    { t: '14 400 × 7 000 × 4 200', c: 2 }, { t: 'Phòng ngủ 1: 4 800 × 3 000', c: 2 },
+    { t: '2 phòng ngủ', c: 3 }, { t: '3 cửa đi 1 cánh', c: 3 }
+  ];
+  var chipsBox = document.getElementById('chips'), sel = null;
+  CHIPS.forEach(function (c, idx) {
+    var b = document.createElement('button');
+    b.className = 'chip'; b.textContent = c.t; b.dataset.cat = c.c; b.dataset.idx = idx;
+    b.addEventListener('click', function () {
+      chipsBox.querySelectorAll('.chip').forEach(function (x) { x.classList.remove('sel'); });
+      if (sel === b) { sel = null; return; }
+      sel = b; b.classList.add('sel');
+    });
+    chipsBox.appendChild(b);
+  });
+  document.querySelectorAll('#cols .col').forEach(function (col) {
+    col.addEventListener('click', function () {
+      if (!sel) return;
+      var drop = document.createElement('span');
+      drop.className = 'drop'; drop.textContent = sel.textContent; drop.dataset.cat = sel.dataset.cat;
+      // bỏ chip cũ nếu đã nằm trong cột khác
+      var old = document.querySelector('.drop[data-idx="' + sel.dataset.idx + '"]');
+      if (old) old.parentNode.removeChild(old);
+      drop.dataset.idx = sel.dataset.idx;
+      drop.addEventListener('click', function (e) {
+        e.stopPropagation();
+        var c = chipsBox.querySelector('.chip[data-idx="' + drop.dataset.idx + '"]');
+        if (c) c.classList.remove('done');
+        drop.remove();
+      });
+      col.appendChild(drop);
+      sel.classList.add('done'); sel.classList.remove('sel'); sel = null;
+    });
+  });
+  document.getElementById('dndcheck').addEventListener('click', function () {
+    var ok = 0;
+    document.querySelectorAll('#cols .col').forEach(function (col) {
+      var want = +col.dataset.cat;
+      col.querySelectorAll('.drop').forEach(function (d) { if (+d.dataset.cat === want) ok++; });
+    });
+    var sc = document.getElementById('dndscore');
+    sc.textContent = ok + '/6 đúng' + (ok >= 6 ? '  ✓ Hoàn thành!' : '');
+    sc.style.color = ok >= 6 ? '#1f9d55' : '#c55a11';
+    if (ok >= 6) markDone();
+  });
+
+  // luyện tập cuối bài (slide 12)
+  var LT = [
+    { q: '1 (Nhận biết) Bản vẽ nhà gồm những nội dung nào?', a: 1, o: ['Khung tên, hình biểu diễn, kích thước', 'Chỉ có hình ảnh ngôi nhà', 'Bảng kê và yêu cầu kĩ thuật'], e: 'Bản vẽ nhà = khung tên + hình biểu diễn + kích thước; không có bảng kê/yêu cầu kĩ thuật như bản vẽ lắp.' },
+    { q: '2 (Nhận biết) Trên mặt bằng, cầu thang được vẽ bằng kí hiệu nào?', a: 2, o: ['Cầu thang trên mặt cắt', 'Cầu thang trên mặt bằng', 'Cửa đi hai cánh'], e: 'Cầu thang trên mặt bằng có mũi tên chỉ chiều đi lên; trên mặt cắt mới có đường cắt.' },
+    { q: '3 (Nhận biết) Tỉ lệ 1:100 cho biết điều gì?', a: 1, o: ['1 cm trên bản vẽ = 100 cm thực tế', '1 cm trên bản vẽ = 1 cm thực tế', 'Bản vẽ lớn hơn thực tế 100 lần'], e: 'Tỉ lệ 1:100 nghĩa là kích thước thật gấp 100 lần kích thước trên bản vẽ.' },
+    { q: '4 (Thông hiểu) Vì sao phải đọc kích thước chung trước kích thước từng bộ phận?', a: 3, o: ['Vì nó ngắn hơn', 'Vì đẹp hơn', 'Để nắm tổng thể, tránh cộng dồn sai'], e: 'Đọc chung trước để hình dung toàn bộ ngôi nhà, rồi mới vào từng phòng – tránh cộng dồn hoặc đọc sót.' },
+    { q: '5 (Thông hiểu) Trên Hình 5.3 có mấy cửa đi một cánh?', a: 2, o: ['1', '3', '6'], e: 'Hình 5.3 có 1 cửa đi hai cánh và 3 cửa đi một cánh.' },
+    { q: '6 (Vận dụng) Bản vẽ tỉ lệ 1:100, phòng 4 200 × 3 000 mm. Trên bản vẽ vẽ bao nhiêu cm?', a: 3, o: ['42 × 30 cm', '4 200 × 3 000 cm', '4,2 × 3,0 cm'], e: '4 200 mm = 4,2 m; chia cho 100 → 4,2 cm (và 3,0 cm).' },
+    { q: '7 (Vận dụng) Từ Hình 5.4, em đếm được mấy phòng ngủ và mấy nhà vệ sinh?', a: 1, o: ['2 phòng ngủ, 1 vệ sinh', '1 phòng ngủ, 2 vệ sinh', '3 phòng ngủ, 0 vệ sinh'], e: 'Hình 5.4 có 2 phòng ngủ, 1 nhà vệ sinh và 1 phòng khách – bếp.' }
+  ];
+  var qstage = document.getElementById('qstage'), qnum = document.getElementById('qnum'),
+    qtxt = document.getElementById('qtxt'), qopts = document.getElementById('qopts'),
+    qexp = document.getElementById('qexp'), qidx = 0, qscore = 0, qlock = false;
+  function showQ() {
+    var it = LT[qidx];
+    qnum.textContent = 'Câu ' + (qidx + 1) + '/' + LT.length;
+    qtxt.textContent = it.q;
+    qexp.textContent = '';
+    qopts.innerHTML = '';
+    it.o.forEach(function (t, i) {
+      var b = document.createElement('button'); b.type = 'button'; b.innerHTML = '<i>' + String.fromCharCode(65 + i) + '</i>' + t;
+      b.addEventListener('click', function () {
+        if (qlock) return; qlock = true;
+        var ok = i + 1 === it.a;
+        var all = qopts.querySelectorAll('button');
+        all.forEach(function (x) { x.classList.remove('ok', 'bad'); });
+        b.classList.add(ok ? 'ok' : 'bad');
+        if (!ok) all[it.a - 1].classList.add('ok');
+        qexp.textContent = it.e;
+        if (window.FX) { if (ok) FX.ok(); else FX.bad(); }
+        setTimeout(function () {
+          qlock = false; qidx++;
+          if (qidx < LT.length) showQ(); else finish();
+        }, 1500);
+      });
+      qopts.appendChild(b);
+    });
+  }
+  function finish() {
+    qnum.textContent = 'Hoàn thành';
+    qtxt.textContent = ''; qopts.innerHTML = ''; qexp.textContent = '';
+    var fin = document.createElement('div'); fin.className = 'qfin';
+    fin.innerHTML = 'Em trả lời đúng <b style="color:#1f9d55">' + qscore + '/' + LT.length + '</b> câu' +
+      (qscore >= 5 ? ' — Rất tốt!' : ' — Xem lại các câu chưa chắc nhé.');
+    qstage.appendChild(fin);
+    if (qscore >= 5) {
+      if (window.FX) FX.ok();
+      markDone();
+      var nx = document.getElementById('next'); if (nx) nx.classList.add('blink');
+    }
+  }
+  showQ();
+});
+</script>
+<script src="assets/js/extra.js"></script>
+<script src="assets/js/narration.js"></script>
+<script src="assets/js/game-order.js"></script>
+
+<div class="game" id="gameOrder">
+  <div class="box">
+    <div class="mhead"><h3>Trò chơi: Xếp đúng trình tự đọc bản vẽ</h3><button class="mclose" id="gclose" type="button" aria-label="Đóng">✕</button></div>
+    <p class="gcap">Bấm các bước theo đúng thứ tự.</p>
+    <div class="gchips" id="gchips"></div>
+    <div class="gmsg" id="gmsg"></div>
+  </div>
+</div>
+</body>
+</html>

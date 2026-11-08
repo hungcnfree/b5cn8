@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="vi">
+<head><meta charset="utf-8"><title>audit</title></head>
+<body>
+<iframe id="f" src="bai-hoc.html" style="width:1366px;height:768px;border:0;position:fixed;left:0;top:0"></iframe>
+<pre id="out">waiting…</pre>
+<script>
+var f = document.getElementById('f');
+f.addEventListener('load', function () {
+  var d = f.contentDocument, w = f.contentWindow;
+  try {
+    var rep = { slides: d.querySelectorAll('.slide').length, menu: d.querySelectorAll('#mlist button').length, nav: !!d.getElementById('nav'), issues: [], images: [], titles: [] };
+    d.querySelectorAll('.slide').forEach(function (s, i) {
+      var t = s.querySelector('.title');
+      if (t) rep.titles.push({ i: i + 1, px: parseFloat(getComputedStyle(t).fontSize), menu: (s.dataset.menu || '').slice(0, 24) });
+      // detect overflow inside content columns
+      ['.body', '.panel', '.figbox', '.fill', '.cols'].forEach(function (sel) {
+        s.querySelectorAll(sel).forEach(function (el) {
+          if (el.scrollHeight > el.clientHeight + 4 || el.scrollWidth > el.clientWidth + 4) {
+            rep.issues.push({ i: i + 1, sel: sel, h: el.scrollHeight - el.clientHeight, w: el.scrollWidth - el.clientWidth, menu: (s.dataset.menu || '').slice(0, 20) });
+          }
+        });
+      });
+    });
+    d.querySelectorAll('.slide img').forEach(function (im) {
+      rep.images.push({ src: im.getAttribute('src').split('/').pop(), w: im.naturalWidth, h: im.naturalHeight, loaded: im.naturalWidth > 0 });
+    });
+    // font sizes on active slide 10
+    var t10 = d.querySelector('.slide .title');
+    rep.activeTitle = t10 ? getComputedStyle(t10).fontSize : null;
+    document.getElementById('out').textContent = JSON.stringify(rep, null, 0);
+  } catch (e) {
+    document.getElementById('out').textContent = 'ERR ' + e.message;
+  }
+});
+</script>
+</body>
+</html>
