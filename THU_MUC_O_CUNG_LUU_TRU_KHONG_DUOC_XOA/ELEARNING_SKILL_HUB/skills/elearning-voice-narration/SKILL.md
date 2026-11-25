@@ -1,0 +1,6 @@
+---
+name: elearning-voice-narration
+description: Dẫn dắt bài học tự nhiên, tránh cảm giác robot và đồng bộ TTS.
+---
+# Yêu cầu giáo viên 2026-11-25
+Dẫn dắt theo mạch tò mò → khám phá → tự phát hiện → chốt kiến thức đúng SGK (nút Ghi vở) → vận dụng → phản hồi và chuyển tiếp. Không áp dụng máy móc cả chu trình trên từng slide. Kết nối slide bằng câu hỏi hoặc tình huống có ý nghĩa; không đọc nguyên văn màn hình. Viết tiếng Việt giao tiếp tự nhiên, câu ngắn, dấu câu và khoảng nghỉ hợp lý, thay đổi nhịp và cách mở đầu. Không giả vờ biết cảm xúc học sinh; khen cụ thể dựa trên thao tác thực tế, đa dạng, không sáo rỗng. Cho học sinh thời gian suy nghĩ; không phát lời đọc khi đang nhập đáp án. Phản hồi đúng/sai có giải thích hoặc gợi ý; tránh chồng tiếng. TTS trình duyệt dùng trong phát triển, Edge TTS sản xuất MP3 sau khi chốt kịch bản và kiểm tra điều kiện sử dụng. Gắn lời thoại theo ID nội dung, không theo số slide; phát hiện thay đổi văn bản và chỉ tạo lại đoạn cần thiết. Có nghe lại, tắt tiếng, tốc độ đọc, văn bản thay thế; dừng lời cũ khi chuyển slide. Kiểm thử nghe thực tế với giọng Việt, độ tự nhiên, phát âm thuật ngữ, nhịp nghỉ, tương tác và khả năng tập trung. Đây là tiêu chuẩn mới, chưa xác nhận triển khai hoặc kiểm thử.
