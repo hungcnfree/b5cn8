@@ -1,0 +1,128 @@
+{
+  "version": "1.0",
+  "status": "specification-only",
+  "canvas": {
+    "width": 1024,
+    "height": 1024,
+    "background": "transparent"
+  },
+  "anchor": {
+    "x": 512,
+    "y": 880
+  },
+  "poses": [
+    {
+      "id": "dung_nghi",
+      "file": "01_dung_nghi.png",
+      "status": "pending_generation"
+    },
+    {
+      "id": "di_trai_1",
+      "file": "02_di_trai_1.png",
+      "status": "pending_generation"
+    },
+    {
+      "id": "di_trai_2",
+      "file": "03_di_trai_2.png",
+      "status": "pending_generation"
+    },
+    {
+      "id": "di_phai_1",
+      "file": "04_di_phai_1.png",
+      "status": "pending_generation"
+    },
+    {
+      "id": "di_phai_2",
+      "file": "05_di_phai_2.png",
+      "status": "pending_generation"
+    },
+    {
+      "id": "ngoi_xuong",
+      "file": "06_ngoi_xuong.png",
+      "status": "pending_generation"
+    },
+    {
+      "id": "ngoi",
+      "file": "07_ngoi.png",
+      "status": "pending_generation"
+    },
+    {
+      "id": "dung_len",
+      "file": "08_dung_len.png",
+      "status": "pending_generation"
+    },
+    {
+      "id": "chuan_bi_ban_to",
+      "file": "09_chuan_bi_ban_to.png",
+      "status": "pending_generation"
+    },
+    {
+      "id": "ban_to",
+      "file": "10_ban_to.png",
+      "status": "pending_generation"
+    },
+    {
+      "id": "to_dang_phong",
+      "file": "11_to_dang_phong.png",
+      "status": "pending_generation"
+    },
+    {
+      "id": "bam_neo",
+      "file": "12_bam_neo.png",
+      "status": "pending_generation"
+    },
+    {
+      "id": "vui",
+      "file": "13_vui.png",
+      "status": "pending_generation"
+    },
+    {
+      "id": "bat_ngo",
+      "file": "14_bat_ngo.png",
+      "status": "pending_generation"
+    },
+    {
+      "id": "suy_nghi",
+      "file": "15_suy_nghi.png",
+      "status": "pending_generation"
+    },
+    {
+      "id": "co_gang",
+      "file": "16_co_gang.png",
+      "status": "pending_generation"
+    },
+    {
+      "id": "chien_thang",
+      "file": "17_chien_thang.png",
+      "status": "pending_generation"
+    }
+  ],
+  "animations": {
+    "idle": [
+      "dung_nghi"
+    ],
+    "walkLeft": [
+      "di_trai_1",
+      "di_trai_2"
+    ],
+    "walkRight": [
+      "di_phai_1",
+      "di_phai_2"
+    ],
+    "sit": [
+      "ngoi_xuong",
+      "ngoi"
+    ],
+    "stand": [
+      "dung_len",
+      "dung_nghi"
+    ],
+    "shoot": [
+      "chuan_bi_ban_to",
+      "ban_to",
+      "to_dang_phong",
+      "bam_neo"
+    ]
+  },
+  "note": "Tơ động vẽ bằng engine từ cổ tay đến điểm neo; không gộp tơ dài vào sprite. Kiểm tra nhân vật gốc trước khi thay thế."
+}
