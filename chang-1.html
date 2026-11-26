@@ -182,7 +182,7 @@ function fire(){busy=true;pose('shoot');const A=ctr(sS.el),B=ctr(sT.el),hr=hero.
 web('#w1',hx,hy,A);web('#w2',hx,hy,B);snd(900,.2,'square',.05,300);setTimeout(judge,520)}
 function judge(){if(over)return;const a=sS,b=sT,ok=a.id===b.id;
 if(ok){if(got===3){stopT=true;tEnd=performance.now()}snd(523,.12);setTimeout(()=>snd(784,.22),110);say(L.ok[a.id]);pose('cheer');hero.classList.add('cheer');[a,b].forEach(i=>{i.done=true;i.el.classList.add('out')});
-setTimeout(()=>{hero.classList.remove('cheer');pose(got===3?'cheer':'idle');clr();a.el.remove();b.el.remove();bagAdd(a.id);got++;sS=sT=null;busy=false;if(got===4&&!over)win()},700)}
+setTimeout(()=>{hero.classList.remove('cheer');pose(got===3?'cheer':'idle');clr();a.el.remove();b.el.remove();bagAdd(a.id);got++;if(parent!==window)parent.postMessage({type:'b5-game-score',game:'warm',earned:got,max:4},location.origin);sS=sT=null;busy=false;if(got===4&&!over)win()},700)}
 else{snd(220,.25,'sawtooth',.06,140);pose('puz');[a,b].forEach(i=>i.el.classList.add('shake'));
 const m=miss[a.id]=(miss[a.id]||0)+1;say(m>1?GL(a.id):BAD(a.id));
 if(m>1){const g=items.find(i=>i.kind==='txt'&&i.id===a.id&&!i.done);if(g)g.el.classList.add('glow')}
